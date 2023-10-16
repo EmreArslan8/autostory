@@ -1,6 +1,4 @@
 
-  
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +9,28 @@
         @apply font-sans
     }
 }
-
+.wrapper {
+    background-color: white;
+    padding: 2px; /* Form etrafına 20 piksellik boşluk eklendi */
+  }
+  
+  input {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Input ile submit arasına 10 piksellik boşluk eklendi */
+  }
+  
+  button[type="submit"] {
+ 
+    background-color: rgb(78, 159, 78);
+    border-radius: 4px;
+    color: white;
+    border: none;
+    height: 28px;
+width: 50px;
+    cursor: pointer;
+  }
+  
 
 
 

@@ -9,13 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.13",
+    "axios": "^1.5.1",
+    "dom-to-image": "^2.6.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.2",
+    "html2canvas": "^1.4.1",
     "next": "13.5.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-use-downloader": "^1.2.4"
   },
   "devDependencies": {
+    "@types/node": "20.8.0",
+    "@types/react": "18.2.24",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.30",
     "tailwindcss": "^3.3.3"

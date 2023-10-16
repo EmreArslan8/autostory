@@ -1,14 +1,13 @@
+import React from 'react'
 
-import card from './autostory'
-
-export default function Home() {
+const index = () => {
   return (
+    <div className=' text-white flex justify-center items-center bg-slate-600'>
+     ANA SAYFA
     
-    
- 
- <card />
-
- 
-
+      
+      </div>
   )
 }
+
+export default index

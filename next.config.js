@@ -3,4 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports =  {
+  images: {
+    domains: ['static.zara.net', 'static.bershka.net', 'cdn.dsmcdn.com', 'www.sephora.com.tr'],
+  },
+}
+
