@@ -1,21 +1,16 @@
+
 import React, { useRef } from 'react';
 import Head from 'next/head';
 import domtoimage from 'dom-to-image';
-
 const Autostory = ({ productData }) => {
   const containerRef = useRef();
-
   const handleDownloadImage = () => {
     const element = containerRef.current;
 
     if (element) {
       const imageElement = element.querySelector('.image-container img');
-      const originalSrc = imageElement.src; // Store the original src
-
-      // Set the src attribute to the imgSrc URL
+      const originalSrc = imageElement.src; 
       imageElement.src = productData.imgSrc;
-
-      // Remove unnecessary elements before taking the screenshot
       const elementsToRemove = element.querySelectorAll('.remove-on-screenshot');
       elementsToRemove.forEach(element => element.remove());
 
@@ -25,11 +20,11 @@ const Autostory = ({ productData }) => {
           link.href = dataUrl;
           link.download = 'product-story.png';
           link.click();
-          imageElement.src = originalSrc; // Restore the original src
+          imageElement.src = originalSrc; 
         })
         .catch(function (error) {
           console.error('Error:', error);
-          imageElement.src = originalSrc; // Restore the original src in case of an error
+          imageElement.src = originalSrc;
         });
     } else {
       console.error('autostory-container elementi bulunamadı.');

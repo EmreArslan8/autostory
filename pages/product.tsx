@@ -43,7 +43,7 @@ const Hello = () => {
         <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} />
         <button type="submit">Submit</button>
       </form>
-      
+     {/* {JSON.stringify(productData)} */}
       <Autostory productData={productData} />
       
       {/* İndir düğmesi */}

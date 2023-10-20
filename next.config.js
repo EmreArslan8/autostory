@@ -5,7 +5,7 @@ const nextConfig = {
 
 module.exports =  {
   images: {
-    domains: ['static.zara.net', 'static.bershka.net', 'cdn.dsmcdn.com', 'www.sephora.com.tr'],
+    domains: ['static.zara.net', 'static.bershka.net', 'cdn.dsmcdn.com', "lp2.hm.com", "st.mngbcn.com"],
   },
 }
 

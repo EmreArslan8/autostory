@@ -1,13 +1,25 @@
-import React from 'react'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-const index = () => {
+export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleClick = () => {
+      router.push('/product'); // Burada '/product' yerine yönlendirmek istediğiniz sayfanın yolu olmalıdır
+    };
+
+    document.addEventListener('click', handleClick);
+
+    return () => {
+      document.removeEventListener('click', handleClick);
+    };
+  }, [router]);
+
   return (
-    <div className=' text-white flex justify-center items-center bg-slate-600'>
-     ANA SAYFA
-    
-      
-      </div>
-  )
+    <div>
+      <h1>Home Page</h1>
+      <p>Click anywhere to go to the product page.</p>
+    </div>
+  );
 }
-
-export default index
